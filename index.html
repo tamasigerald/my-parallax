@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Demo</title>
+    <script src="./src/app.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <!-- SET PARALLAX CONTAINER -->
+    <div class="bg__container" data-parallax>
+        <!-- SET PARALLAX ELEMENT / LAYER -->
+        <div class="portrait" data-parallax-layer data-depth="15" data-speed="1">HELLO!</div>
+        <div class="portrait" data-parallax-layer data-depth="25" data-speed="4">HELLO!</div>
+        <div class="portrait" data-parallax-layer data-depth="10" data-speed="2.5">HELLO!</div>
+
+        <div class="portrait portrait--1" data-parallax-layer data-depth="40" data-speed="2.5">I am nº 1</div>
+        <div class="portrait portrait--2" data-parallax-layer data-depth="40" data-speed="10">I am nº 2</div>
+        <div class="portrait portrait--3" data-parallax-layer data-depth="50" data-speed="1.5">I am nº 3</div>
+    </div>
+
+    <main class="container">
+        <h1>Hola Upgraders!</h1>
+        <h3>This is an example of vanillaJS Parallax effect</h3>
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer__text">Made with &hearts; by Gerald</h3>
+        <nav class="footer__nav">
+            <a class="footer__link" href="https://github.com/tamasigerald"><i class='bx bxl-github'></i></a>
+            <a class="footer__link" href="https://www.linkedin.com/in/tamasigerald/"><i class='bx bxl-linkedin'></i></a>
+            <a class="footer__link" href="https://www.instagram.com/tamasigerald/"><i class='bx bxl-instagram'></i></a>
+        </nav>
+    </footer>
+</body>
+</html>

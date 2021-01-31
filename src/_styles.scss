@@ -1,0 +1,95 @@
+$c-white: #F4F5F4;
+$c-black: #2B303A;
+$c-gray: #BAC1B8;
+$c-blue: #58A4B0;
+$c-green: #0F956A;
+$c-red: #D64933;
+
+@mixin flexCenter ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+html {
+    font-size: 8px;
+}
+
+body {
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.footer {
+    @include flexCenter(row);
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100vw;
+    color: $c-green;
+    &__text, &__nav {
+        margin: 0 2rem;
+        font-size: 2rem
+    }
+    &__nav {
+        font-size: 2.5rem
+    }
+    &__link {
+        color: $c-green;
+        margin: 0 1rem;
+        transition: color 0.5s;
+        &:hover {
+            color: $c-red;
+        }
+    }
+}
+
+.container {
+    @include flexCenter(column);
+    color: $c-blue;
+}
+
+
+// STYLE BACKGROUND
+.bg__container {
+    background-color: $c-black;
+    width: 100vw;
+    z-index: -1;
+}
+
+// STYLE PARALLAX ELEMENTS
+.portrait {
+    // set element offset
+    height: 200px;
+    width: 200px;
+    // set element initial position
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    // style element
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $c-red;
+    font-family: 'Cinzel', serif;
+    background-color: rgb(168, 168, 168);
+    box-shadow: inset 0px 0px 200px 200px rgba(0, 0, 0, 0.4);
+
+    &--1 {
+        top: 25%;
+        left: 10%;
+    }
+    &--2 {
+        top: 75%;
+        left: 70%;
+    }
+    &--3 {
+        top: 45%;
+        left: 80%;
+    }
+}

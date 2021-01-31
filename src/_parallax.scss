@@ -1,0 +1,12 @@
+[data-parallax] {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+[data-parallax-layer] {
+    position: absolute;
+}
